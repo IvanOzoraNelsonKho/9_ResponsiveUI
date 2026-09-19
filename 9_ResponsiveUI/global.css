@@ -1,3 +1,4 @@
+/* mereset margin/padding dan mengatur box sizing */
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +10,18 @@ body {
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.5;
-  overflow-x: hidden;
+  overflow-x: hidden; /* untuk mencegah scroll horizontal */
 }
 
+/* pengaturan gambar dan rasio 16:9 */
 .responsive-img {
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/9; 
   object-fit: cover;
 }
 
+/* navigasi mobile-first dengan Flexbox vertikal */
 .navbar {
   background-color: #4a2c11;
   color: white;
@@ -40,6 +43,7 @@ body {
   margin: 0px 10px;
 }
 
+/* banner utama */
 .hero {
   text-align: center;
   padding: 40px 0;
@@ -57,6 +61,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* tombol call-to-action */
 .hero a {
   display: inline-block;
   background-color: #4a2c11;
